@@ -7,7 +7,7 @@ COPY netapi.csproj .
 RUN dotnet restore
 
 # Copy the entire project and build
-COPY . .
+COPY . ./
 RUN dotnet publish -c Release -o out
 
 # Runtime stage
